@@ -28,7 +28,7 @@ function gameOver(){
 
 function updateScore(){
     $team1Score.textContent=team1Score
-    $team1Wickets.textContent=team1Wickets=team1Wickets
+    $team1Wickets.textContent=team1Wickets
     $team2Score.textContent=team2Score
     $team2Wickets.textContent=team2Wickets
 }
@@ -48,14 +48,14 @@ strikeButton.onclick=()=>{
         //increasing the balls count
         team2BallsFaced++
         //updating the score for the ball
-        document.querySelector(`#team2-superover div:nth-child(${team2BallsFaced}`).textcontent=randomElement
+        document.querySelector(`#team2-superover div:nth-child(${team2BallsFaced})`).textContent=randomElement
         if(randomElement==="W"){
             team2Wickets++
         }
         else{
-            teamscore+=randomElement
+             team2Score+=randomElement
         }
-        if(team2BallsFaced===6 || team2Wickets==2 || team2Score>team1Score){
+        if(team2BallsFaced===6 || team2Wickets===2 || team2Score>team1Score){
             turn=3
             gameOver()
         }
@@ -69,7 +69,7 @@ strikeButton.onclick=()=>{
             team1Wickets++
         }
         else{
-            team1 += randomElement
+            team1Score += randomElement
         }
         if(team1BallsFaced===6 || team1Wickets===2) turn=2
     }
