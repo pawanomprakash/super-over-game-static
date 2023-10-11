@@ -21,7 +21,7 @@ const possibleOutcomes=[0,1,2,3,4,6,"W"]
 function gameOver(){
     gameOverAudio.play()
     if(team1Score>team2Score) alert("IND wins")
-    if(team2Score>team1score) alert("PAK wins")
+    if(team2Score>team1Score) alert("PAK wins")
     if(team2Score===team1Score) alert("It is another superover!")
 
 }
